@@ -1,0 +1,220 @@
+body {
+    margin-left: 0;
+    padding: 0;
+    min-height: 80vh;
+    background-color: #c39a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-container {
+    /* background: rgb(29, 0, 0); */
+    max-width: 800px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .todo-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(180, 39, 39, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .todo-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .todo-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .todo-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .todo-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .todo-button.primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .todo-button.primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #eee;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .filter-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filter-button:hover {
+    background-color: #ddd;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .todo-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item.completed {
+    background-color: #f8f9fa;
+    opacity: 0.7;
+  }
+  
+  .todo-item-content {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .todo-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    word-break: break-word;
+  }
+  
+  .todo-item.completed .todo-item-title {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .todo-item-details {
+    color: #6c757d;
+    font-size: 14px;
+    word-break: break-word;
+  }
+  
+  .todo-item-deadline {
+    color: #6c757d;
+    font-size: 12px;
+  }
+  
+  .todo-item-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .todo-button.small {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  .todo-button.green {
+    background-color: #28a745;
+    color: white;
+  }
+  .todo-button.green:hover {
+    background-color: #218838;
+  }
+  .todo-button.yellow {
+    background-color: #ffc107;
+    color: black;
+  }
+  .todo-button.yellow:hover {
+    background-color: #e0a800;
+  }
+  .todo-button.blue {
+    background-color: #007bff;
+    color: white;
+  }
+  .todo-button.blue:hover {
+    background-color: #0056b3;
+  }
+  .todo-button.red {
+    background-color: #dc3545;
+    color: white;
+  }
+  .todo-button.red:hover {
+    background-color: #c82333;
+  }
+  
+  @media (max-width: 480px) {
+    .todo-container {
+      padding: 10px;
+    }
+    .todo-card {
+      padding: 15px;
+    }
+    .todo-item {
+      padding: 10px;
+    }
+    .todo-item-buttons {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+  
